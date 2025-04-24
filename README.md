@@ -1,8 +1,4 @@
-Sure! Here's a basic `README.md` for your project:
-
----
-
-# Job Portal UI - Mini Project
+# Job Portal UI - Mini Task
 
 This is a simple job portal interface built with **React** and **Tailwind CSS**. The application includes features such as authentication, job listings, and a pricing plan page. This is a front-end only project with no back-end integration, focusing on the UI/UX design, form validation, and state management.
 
