@@ -89,6 +89,9 @@ This will start the app at `http://localhost:3000` in your browser.
   /pages           # Pages such as Login, Register, Job Listings, Job Details, and Plans
   /styles          # Tailwind CSS configurations and custom styles
   /utils           # Utility functions for validation, etc.
+  /lib             # Libraries
+  /routes          # For handling routes and route guard
+  /store           # For handling Redux
   /context         # Authentication state management using React Context API (or Redux if preferred)
   /assets          # Images, icons, and other assets
 ```
