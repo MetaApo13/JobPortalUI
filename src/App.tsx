@@ -1,4 +1,4 @@
-// No need to import BrowserRouter here anymore
+
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/login';
