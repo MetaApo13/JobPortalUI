@@ -12,12 +12,16 @@
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from './store'; // Import the store
+import { BrowserRouter } from 'react-router-dom'; // ✅ add this
+import { store } from './store';
 import App from './App';
-import './index.css'; // Tailwind + other styles
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter> {/* ✅ wrap App in Router */}
+      <App />
+    </BrowserRouter>
   </Provider>
 );
+;
