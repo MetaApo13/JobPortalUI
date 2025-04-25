@@ -6,7 +6,6 @@ interface User {
   email: string;
   mobile: string;
   avatar?: string;
-  // You can add more fields as needed
 }
 
 interface AuthState {

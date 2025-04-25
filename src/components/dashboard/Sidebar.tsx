@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Home, Briefcase, Package, User, Calendar, LogOut } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+// import { logoutUser } from '@/features/auth/authslice';
 
 interface SidebarProps {
   user: {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { loginSuccess } from '../features/auth/authslice'; // updated import
+import { loginSuccess } from '../features/auth/authslice';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -20,21 +20,20 @@ const Login = () => {
   const handleLogin = () => {
     if (email && password) {
       const storedUsers = JSON.parse(localStorage.getItem('users') || '[]');
-      const matchedUser = storedUsers.find((user: any) => user.email === email);
+      const matchedUser = storedUsers.find(
+        (user: any) => user.email === email && user.password === password
+      );
 
       if (matchedUser) {
-        // Simulate login
         dispatch(
           loginSuccess({
             user: matchedUser,
             token: 'dummy-token',
           })
         );
-
-        // Navigate to dashboard
         navigate('/dashboard');
       } else {
-        alert('No account found. Please register.');
+        alert('Invalid email or password. Please try again or register.');
       }
     }
   };

@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Search, X, Globe, Filter, Check, ChevronDown } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { useNavigate } from 'react-router-dom';
+// import { logoutUser } from '@/features/auth/authslice';
 
 interface HeaderProps {
   searchTerm: string;
@@ -43,6 +44,7 @@ const Header: FC<HeaderProps> = ({
 
   const filteredLocations = availableLocations.filter((loc) =>
     loc.toLowerCase().includes(locationSearch.toLowerCase())
+  
   );
 
   return (
