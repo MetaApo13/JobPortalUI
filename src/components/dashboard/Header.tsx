@@ -22,7 +22,7 @@ interface HeaderProps {
   user: {
     name: string;
     avatar?: string;
-  } | null; // Change this line to handle null user
+  } | null; 
 }
 
 const Header: FC<HeaderProps> = ({

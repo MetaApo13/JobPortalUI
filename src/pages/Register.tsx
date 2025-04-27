@@ -20,7 +20,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useDispatch } from 'react-redux';
-import { loginSuccess } from '@/features/auth/authslice'; //C:\Users\nsinr\Documents\JobPortalUI\src\features\auth\authslice.ts
+import { loginSuccess } from '@/features/auth/authslice'; 
 
 type FieldError = {
   fullName?: string;

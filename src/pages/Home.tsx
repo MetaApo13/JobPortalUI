@@ -17,7 +17,7 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   // const [particles, setParticles] = useState<Particle[]>([]);
   const animationRef = useRef<number | null>(null);
-  const particleRef = useRef<Particle[]>([]); // used for animation loop
+  const particleRef = useRef<Particle[]>([]);
 
   // Initialize particles
   useEffect(() => {
@@ -140,7 +140,7 @@ export default function Home() {
         window.cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [mousePosition]); // removed `particles` dependency to fix infinite loop
+  }, [mousePosition]); 
 
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
@@ -209,8 +209,8 @@ export default function Home() {
 
           {/* Features */}
           <div className="grid md:grid-cols-3 gap-8 mt-24 w-full max-w-5xl">
-            {/* Feature cards (unchanged) */}
-            {/* ... */}
+           
+         
           </div>
         </main>
 

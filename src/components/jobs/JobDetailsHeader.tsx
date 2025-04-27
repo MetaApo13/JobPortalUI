@@ -37,7 +37,7 @@ const JobDetailsHeader: React.FC<JobDetailsHeaderProps> = ({ companyName }) => {
           <DropdownMenuItem onClick={() => navigate('/settings')}>Settings</DropdownMenuItem>
           <DropdownMenuItem
             onClick={() => {
-              // You can replace this with actual logout logic
+        
               alert('Logging out...');
             }}
             className="text-red-600"
